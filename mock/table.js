@@ -1,13 +1,12 @@
 import Mock from 'mockjs'
 
 const data = Mock.mock({
-  'items|30': [{
+  'items|3': [{
     id: '@id',
-    title: '@sentence(10, 20)',
-    'status|1': ['published', 'draft', 'deleted'],
-    author: 'name',
-    display_time: '@datetime',
-    pageviews: '@integer(300, 5000)'
+    name: '边缘节点@integer(0, 100)',
+    ip: '@ip',
+    port: '@integer(8000, 30000)',
+    'status|+1': ['online', 'offline', 'error']
   }]
 })
 
