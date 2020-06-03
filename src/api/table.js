@@ -7,3 +7,20 @@ export function getList(params) {
     params
   })
 }
+
+export function getMessage(params) {
+  return request({
+    url: '/vue-admin-template/message/list',
+    method: 'get',
+    params
+  })
+}
+
+export function getInterface(params) {
+  return request({
+    url: '/vue-admin-template/interface/list',
+    method: 'get',
+    params
+  })
+}
+
